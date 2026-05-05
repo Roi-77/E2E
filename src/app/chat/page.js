@@ -260,13 +260,13 @@ export default function ChatPage() {
     <div className="flex h-screen">
       {/* Sidebar */}
       <div className="w-1/4 border-r p-4 bg-white">
-        <h2 className="font-bold mb-3">Users</h2>
+        <h2 className="font-bold mb-3 text-slate-800">Users</h2>
 
         {users.map((u) => (
           <button
             key={u}
             onClick={() => startConversation(u)}
-            className={`block w-full text-left p-2 rounded ${
+            className={`block w-full text-slate-800 text-left p-2 rounded ${
               recipient === u
                 ? "bg-blue-100"
                 : "hover:bg-gray-100"
